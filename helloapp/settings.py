@@ -26,7 +26,9 @@ SECRET_KEY = '8)&ivl5&+vj5*h2nke1e!68(a=op-za*v9a1h0+^uqks19$==r'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['cs1160315v2.herokuapp.com']
+ALLOWED_HOSTS = [cs1160315v2.heroku.com]
+sys.path.append('/app/helloapp/settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'helloapp.settings')
 
 
 # Application definition
